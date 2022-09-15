@@ -8,11 +8,10 @@ header, main, footer {
      max-width: 700px;
     margin: 1.5rem auto;
     align-items: center;
+    text-align: center;
 }
 header {
     background-color: #2E4052;
-    display: grid;
-    grid-template-columns: 300px auto;
     height: 500px;
     border-radius: 10px;
     box-shadow: 0 0 8px 8px #2E4052
@@ -21,9 +20,16 @@ header {
 h1 {
     color: rgb(255, 255, 255);
 }
+
 h2{
     font-family: "Dancing Script", "Brush Script MT", cursive;
 }
+
+header img {
+    margin : 10px;
+    border: 1px solid #fff;
+}
+
 a {
     color: #412234;
     text-decoration: none;
@@ -32,3 +38,8 @@ a:hover {
     color: #FFC857;
     text-decoration: underline;
   }
+
+footer {
+    background-color: #2E4052;
+    color : #fff;
+}
