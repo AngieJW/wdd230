@@ -1,14 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 
-
+body {
+    max-width: 760px;
+    margin: 0 auto;
+    align-items: center;
+}
 header {
     background-color: #2E4052;
+    display: grid;
+    grid-template-columns: 300px auto;
+    height: 500px;
 }
 
 h1 {
     color: rgb(255, 255, 255);
 }
-
+h2{
+    font-family: "Dancing Script", "Brush Script MT", cursive;
+}
 a {
     color: #412234;
+    text-decoration: none;
 }
+a:hover {
+    color: #FFC857;
+    text-decoration: underline;
+  }
