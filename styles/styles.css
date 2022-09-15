@@ -8,13 +8,12 @@ header, main, footer {
      max-width: 700px;
     margin: 1.5rem auto;
     align-items: center;
-    text-align: center;
 }
 header {
     background-color: #2E4052;
-    height: 500px;
+    height: 400px;
     border-radius: 10px;
-    box-shadow: 0 0 8px 8px #2E4052
+    text-align: center;
 }
 
 h1 {
@@ -23,11 +22,13 @@ h1 {
 
 h2{
     font-family: "Dancing Script", "Brush Script MT", cursive;
+    text-align: center;
 }
 
 header img {
     margin : 10px;
-    border: 1px solid #fff;
+    float: left;
+    height : 300px;
 }
 
 a {
@@ -42,4 +43,5 @@ a:hover {
 footer {
     background-color: #2E4052;
     color : #fff;
+    text-align: center;
 }
