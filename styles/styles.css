@@ -1,11 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 
 body {
-    max-width: 700px;
-    margin: 1.5rem auto;
-    align-items: center;
     font-size: 18px;
     line-height: 1.5;
+}
+header, main, footer {
+     max-width: 700px;
+    margin: 1.5rem auto;
+    align-items: center;
 }
 header {
     background-color: #2E4052;
