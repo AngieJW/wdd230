@@ -1,6 +1,5 @@
-const copyYear = document.querySelector(copyYear);
-const currentYear = new Date().getFullYear();
-copyYear = currentYear;
+const year = new Date().getFullYear();
+document.querySelector('#currentyear').textContent = year;
 
 const lastModified = new Date(document.lastModified);
 document.getElementById("lastmodified").textContent = lastModified;
