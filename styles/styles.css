@@ -3,7 +3,7 @@
 body {
     font-size: 18px;
     line-height: 1.5;
-    font: Helvetica;
+    font: "Helvetica";
 }
 header, main, footer {
      max-width: 700px;
