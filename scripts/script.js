@@ -1,6 +1,7 @@
-const year = new Date().getFullYear();
-document.querySelector('#currentyear').textContent = year;
+const options = {
+    year: "numeric",
+}
+document.querySelector("#currentyear").textContent = new Date().toLocaleDateString("en-US", options);
 
-const lastModified = new Date(document.lastModified);
-document.getElementById("lastmodified").innerHTML = lastModified;
-
+let lastUpdate = (document.lastModified);
+document.getElementById("lastupdated").innerHTML = lastUpdate;
