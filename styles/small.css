@@ -1,39 +1,39 @@
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:wght@500&display=swap');
 
 body {
-    font-size: 18px;
     line-height: 1.5;
-    font: "Helvetica";
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
 }
 header, main, footer {
-     max-width: 700px;
-    margin: 1.5rem auto;
+    margin: 0.5rem auto;
     align-items: center;
 }
 header {
     background-color: #2E4052;
     height: 400px;
-    border-radius: 10px;
     text-align: center;
-display: flex;
+    display: block;
 }
 
 h1 {
     color: rgb(255, 255, 255);
+    font-size: 1.5rem;
 }
 
 h2{
-    font-family: "Dancing Script", "Brush Script MT", cursive;
+    font-family: "Dancing Script", cursive;
     text-align: center;
     text-shadow: 0px -1px #2E4052;
-     border-bottom: 3px solid darkgray;
+    border-bottom: 3px solid darkgray;
+    font-size: 1.2rem;
 }
 
 header img {
     margin : 50px 50px;
-    float: left;
-    height : 300px;
-border-radius: 5px;
+    height : auto;
+    width: 200px;
+    border-radius: 2px;
 
 }
 
