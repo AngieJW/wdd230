@@ -1,0 +1,22 @@
+@media only screen and (min-width: 32.5em) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+    
+    #firstprinciple {
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    #secondprinciple {
+        grid-row: 1;
+        grid-column: 2;
+    }
+
+    #thirdprinciple {
+        grid-row: 2;
+        grid-column: 1-2;
+    }
+}

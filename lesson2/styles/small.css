@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:wght@500&display=swap');
-
 body {
     line-height: 1.2;
     font-family: 'Roboto', sans-serif;
@@ -8,6 +7,7 @@ header, main, footer {
     margin: 0.5rem auto;
     align-items: center;
 }
+
 header, footer {
     background-color: #2E4052;
     text-align: center;
@@ -15,12 +15,11 @@ header, footer {
     padding: 0.5em;
 }
 
-h1 {
+h1, h2 {
     color: rgb(255, 255, 255);
-    font-size: 1.5rem;
 }
 
-h2{
+h3 {
     font-family: "Dancing Script", cursive;
     text-align: center;
     text-shadow: 0px -1px #2E4052;
@@ -32,7 +31,6 @@ header img {
     height : auto;
     width: 200px;
     border-radius: 2px;
-
 }
 
 a {
