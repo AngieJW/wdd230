@@ -13,10 +13,10 @@ header, footer {
     text-align: center;
     display: block;
     padding: 0.5em;
+    color: rgb(255, 255, 255);
 }
 
 h1 {
-    color: rgb(255, 255, 255);
     font-size: 1.5rem;
 }
 
