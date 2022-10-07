@@ -1,9 +1,30 @@
+
+/*   
+Colors : 
+#2F3137 jet 
+#8fbbcc light gray
+#A6EBC9 magic mint
+#FF4000 red orange
+#FFC43D orange yellow
+*/
+
 body {
     line-height: 1.2;
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
-header, main, footer {
+header, footer {
     margin: 0.5rem auto;
     align-items: center;
+    background-color: #2F3137;
+    display: block;
+}
+section {
+    background-color: #8fbbcc;
+    padding: 2em;
+    margin: 1em;
+}
+img {
+    width: 350px;
+    height: auto;
 }
