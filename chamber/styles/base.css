@@ -1,0 +1,9 @@
+body {
+    line-height: 1.2;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+header, main, footer {
+    margin: 0.5rem auto;
+    align-items: center;
+}
