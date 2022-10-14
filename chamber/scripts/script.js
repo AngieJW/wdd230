@@ -6,6 +6,10 @@ document.querySelector("#currentyear").textContent = new Date().toLocaleDateStri
 let lastUpdate = (document.lastModified);
 document.getElementById("lastupdated").innerHTML = lastUpdate;
 
+const date = new Date();
+let fullDate = new Intl.DateTimeFormat("en-US", {dateStyle: "full"}).format(date);
+document.getElementById("currentdate").innerHTML = fullDate;
+
 function toggleMenu() {
     document.getElementById("navMenu").classList.toggle("open");
 }
