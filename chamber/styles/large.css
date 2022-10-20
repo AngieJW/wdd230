@@ -1,3 +1,42 @@
 @media only screen and (min-width: 64em) { 
- 
+    #hamburgerButton {
+        display:none;
+    }
+    
+    nav ul {
+        display: flex;
+        width: 100%;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        font-size: 3rem;
+        color: #FFC43D;
+        padding: .5em;
+    }
+        
+    nav ul li.active a {
+        background-color: rgba(0,0,0,.2);
+    }
+
+    main {
+        display: grid;
+        grid-template-rows: repeat(3, auto);
+        grid-template-columns: repeat(5, 1fr);
+          }
+    
+    .hero img{
+        width: auto;
+      }
+      .hero div{
+        width: 150px;
+        height: 40px;
+        border-radius: 20px;
+        background:rgba(255, 196, 61, 1);
+        color: white;
+      }
+    
+      iframe {
+        width: 450px;
+      }
 }

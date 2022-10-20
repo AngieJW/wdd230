@@ -35,15 +35,27 @@
         <span id="currentdate"></span>
     </header>
     <main>
-        <section class="hero" ><img src="./images/marseille-hero.jpg" alt="City of Marseille - Photo by Florian Wehde on Unsplash.com">
-            <p>Welcome to Marseille</p><div>Join the Chamber</div></section>
+        <section class="hero" >
+            <picture class="banner">
+                <source media=""(min-width:1050px) srcset="./images/hero/marseille-hero-large.jpg"> 
+                <source media=""(min-width:480px) srcset="./images/hero/marseille-hero-medium.jpg">
+                <source media=""(max-width:480px) srcset="./images/hero/marseille-hero-small.jpg">
+                <img src="images/hero/" alt="City of Marseille - Photo by Florian Wehde on Unsplash.com">
+            <p>Welcome to Marseille</p></picture>
+            <div>Join the Chamber</div>
+        </section>
+
         <section class="event"><h1>Event</h1>
             <h2>Morning Member Meetup</h2>
             For Chamber Members and Invited Guests - Registration is not required but recommended
             Tuesday, November 8, 2022 8:00 AM - 9:30 AM 
             <h2></h2>
         </section>
-        <section class="weather">Weather</section>
+        <section class="weather"><h1>Weather Summary</h1>
+            <p>Current Temperature is <span id="temperature"></span>°C</p>
+            <p>Current Wind Speed is <span id="wind-speed"></span>mph</p>
+            <p>Current Wind chill is<span id="chill"></span>°F</p>
+        </span></section>
 
         <section class="news"><h1>News</h1>
         <h2>Business Series - Entrepreneurial Leadership Conference</h2>
@@ -51,19 +63,32 @@
         <h2>Chamber Announces 2023 Board of Director Nominations</h2>
         </section>
 
-        <section class="news"><h1>Join Us!</h1>
+        <section class="join"><h1>Join Us!</h1>
         <p>Discover how to join the chamber of commerce and how it will benefit your organization!</p>
         </section>
 
         <section class="media">
-            <div class="spotlight">Spotlight 1</div>
-            <div class="spotlight">Spotlight 2</div>
+            <div class="spotlight">
+                <h2>Marports</h2>
+                <img src="images/marports.jpg" alt="Marports logo"/>
+                <a href="https://www.marports.com/">Website</a>
+                <p>2, Traverse Santi
+                13015 Marseille
+                Tél. : +33 (0)4 91 09 58 90
+                contact@marports.com</p>
+            </div>
+            <div class="spotlight">
+                <h2>Anotherway</h2>
+                <img src="images/anotherway.jpg">
+                <a href="https://www.another-way.com/">Website</a>
+                <p></p>
+            </div>
         </section>
 
     </main>
     <footer> <img class="footer-logo" src="./images/logo.png" alt="MCC logo"/>
         <p>Marseille Chamber of Commerce <br/> 1, place de Lenche <br/> 13002 MARSEILLE
-        </p>
+        </p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4543.41038237001!2d5.36328274796548!3d43.29749943401265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9c0c3ae4b9f1b%3A0xe316e4136e2b3056!2sPl.%20de%20Lenche%2C%2013002%20Marseille%2C%20France!5e0!3m2!1sfr!2snl!4v1666261275289!5m2!1sfr!2snl" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <div class="basefooter">
         &copy; <span id="currentyear"></span> || Marseille Chamber of Commerce || Angie Duhard || WDD230 Project
         <br/>Last updated: <span id="lastupdated"></span>
