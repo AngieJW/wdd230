@@ -160,6 +160,10 @@ section {
   max-width: 400px;
 }
 
+.weather img {
+  padding: 1em;
+}
+
 /*-------------------- FOOTER --------------------*/
 footer {
   display:block;
