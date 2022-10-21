@@ -89,7 +89,7 @@
     .media {
         grid-column: 4 / 5;
         grid-row: 1 / 4;
-        display: flexbox;
+        display: flex;
         flex-direction: column;
     }
     .thirdmedia {

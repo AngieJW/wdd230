@@ -43,6 +43,7 @@ header h1 {
   font-size: 0.8rem;
   grid-column: 3/4;
   align-self: center;
+  color: black;
 }
 
 .header-logo {
@@ -103,7 +104,7 @@ nav ul li a:hover {
 }
 
 /*-------------------- HEADER DATE --------------------*/
-#currentdate, section h1, .basefooter {
+#currentdate, section h2, .basefooter {
   display: block;
   font-size: 1rem;
   color: #FFC43D;
@@ -153,6 +154,8 @@ section img {
   top:0;
   margin-left: 1em;
   z-index:1;
+  background: none;
+  color: black;
 }
 
 /*-------------------- MEDIA --------------------*/
@@ -170,7 +173,7 @@ section img {
   max-width: 400px;
 }
 /*-------------------- NEWS --------------------*/
-.news-article h2{
+.news-article h3{
   margin-bottom: 0;
   margin-top: 0;
 }
