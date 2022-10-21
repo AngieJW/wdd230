@@ -181,6 +181,11 @@ section img {
   font-size: 1.5em;
 }
 
+.news-articles img {
+  width: auto;
+  box-sizing: border-box;
+}
+
 .weather img {
   max-width:300px;
 }
