@@ -16,6 +16,7 @@ body {
     box-sizing: border-box;
     align-items: center;
     text-align: center;
+    justify-content: center;
     margin: 0 auto;
 }
 
@@ -102,7 +103,7 @@ nav ul li a:hover {
 }
 
 /*-------------------- HEADER DATE --------------------*/
-#currentdate, section h1 {
+#currentdate, section h1, .basefooter {
   display: block;
   font-size: 1rem;
   color: #FFC43D;
@@ -115,6 +116,15 @@ section {
   background-color: #8fbbcc;
   text-align: center;
   display: block;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 .5em 0;
+  margin: 0 0 .5em 0;
+}
+section img {
+  padding: .5em;
+  width: 100%;
+  box-sizing:border-box;
 }
 
 /*-------------------- HERO --------------------*/
@@ -159,20 +169,29 @@ section {
   height: auto;
   max-width: 400px;
 }
-
-.weather img {
-  padding: 1em;
+/*-------------------- NEWS --------------------*/
+.news-article h2{
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.news-article a{
+  font-size: 1.5em;
 }
 
+.weather img {
+  max-width:300px;
+}
 /*-------------------- FOOTER --------------------*/
 footer {
   display:block;
+  background-color: #2F3137;
 }
 .footer-logo {
-  width: 150px;
+  width: 80vw;
 }
 
 iframe {
-  width: 300px;
-  height: 300px;
+  width: 100%;
+  border: 0;
+  box-sizing: border-box;
 }
