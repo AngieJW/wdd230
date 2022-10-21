@@ -18,49 +18,67 @@ body {
     text-align: center;
     margin: 0 auto;
 }
+
+h1, h2, h3 {
+  font-family: 'Domine', serif;
+  }
+
+a{
+  color: #FF4000;
+}
+/*-------------------- HEADER --------------------*/
+
 header {
     background-color: #2F3137;
-    padding:0 0 .5em 0;
-}
-.header-grid{
-    display: grid;
-    grid-template-columns: 100px auto auto auto;
-    padding:.5em;
-}
-header h1 {
-  grid-column: 3/4;
-  font-size: 0.7rem;
-  justify-content: left;
-  max-height:100px;
-}
-.header-logo {
-  grid-column: 2/3;
-  width: 10vw;
+    padding: 0 0 0.5em 0;
 }
 
+.header-grid {
+  display:grid;
+  width: 100%;
+  grid-template-columns: repeat(4, auto);
+}
+header h1 {
+  font-size: 0.8rem;
+  grid-column: 3/4;
+  align-self: center;
+}
+
+.header-logo {
+  width: 10vw;
+  padding: 10px;
+  grid-column: 2/3;
+  align-self: center;
+}
+
+.social {
+  margin-right: 20px;
+  grid-column: 4/5;
+  align-self: center;
+}
 .social img {
   width: 10vw;
 }
-.social {
-  padding-right: 0.5em;
+/*-------------------- NAV --------------------*/
+.hamburgerMenu {
+  order: -1;
+  position: relative;
+  width: 80px;
 }
 
 #hamburgerButton {
   background:none;
   color:#fff;
-  border:0;
+  border: 0;
+  line-height: 0.9;
   font-size: 2.5em;
   font-weight: bold;
   cursor: pointer;
   position: absolute;
-  top: 0;
-  margin-left: -3rem;
+  top: 10px;
+  left: 10px;
 }
 
-
-nav {
-    width: 100%;
-}
 nav ul {
   display: none;
   padding: 0;
@@ -83,7 +101,8 @@ nav ul li a:hover {
   color: #2F3137;
 }
 
-#currentdate {
+/*-------------------- HEADER DATE --------------------*/
+#currentdate, section h1 {
   display: block;
   font-size: 1rem;
   color: #FFC43D;
@@ -91,48 +110,60 @@ nav ul li a:hover {
   background-color: rgba(0,0,0,.1);
   margin: 0 1em 0 1em;
 }
-h1, h2, h3 {
-  font-family: 'Domine', serif;
-  }
-
+/*-------------------- MAIN --------------------*/
 section {
   background-color: #8fbbcc;
   text-align: center;
   display: block;
-  max-width: 100%;
-}
-.hero {
-  position: relative;
 }
 
+/*-------------------- HERO --------------------*/
+.hero {
+  position: relative;
+  
+}
 .hero img{
-  width: 100vw;
+  width: 100%;
+  box-sizing: border-box;
 }
 .hero div{
   position: absolute;
   cursor: pointer;
   right: 10px;
-  top: 200px;
+  top: 100px;
   width: 150px;
-  height: 40px;
-  border-radius: 20px;
+  padding: 0.5em;
+  border-radius: 15px;
   background:rgba(255, 196, 61, 1);
   color: white;
-  
+  box-shadow: 0 0 20px black;
 }
-.hero p{
+.welcome{
   position: absolute;
   top:0;
   margin-left: 1em;
   z-index:1;
 }
 
+/*-------------------- MEDIA --------------------*/
 .spotlight{
   min-height: 300px;
   background-color: #FFC43D;
   margin: .5em;
 }
+.spotlight img {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+}
 
+/*-------------------- FOOTER --------------------*/
+footer {
+  display:block;
+}
 .footer-logo {
   width: 150px;
 }

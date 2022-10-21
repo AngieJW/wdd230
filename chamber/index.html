@@ -14,41 +14,49 @@
 <body>
     <header >
         <div class="header-grid">
-            <img class="header-logo" src="./images/logo.png" alt="Marseille Chamber of Commerce logo">
-            <h1>Marseille Chamber of Commerce</h1>
+            <img class="header-logo" src="./images/logo.webp" alt="Marseille Chamber of Commerce logo">
+            <h1>Marseille <br>Chamber of Commerce</h1>
             <div class="social">
-                <img src="images/facebook-icon.png" alt="Facebook icon" > 
-                <img src="images/linkedin-icon.png" alt="Linkedin icon">
+                <a href="#"><img src="images/facebook-icon.png" alt="Facebook icon" ></a> 
+                <a href="#"><img src="images/linkedin-icon.png" alt="Linkedin icon"></a>
             </div>
             <div class="hamburgerMenu">
                <button id="hamburgerButton">&#9776;</button>
             </div>
+            <nav>
+                <ul id="navMenu">
+                <li><a class="nav-item" href="#">Discover</a></li>
+                <li><a class="nav-item" href="#">Directory</a></li>
+                <li><a class="nav-item" href="#">Join</a></li>
+                <li><a class="nav-item" href="#">Contact</a></li>
+            </ul>
+            </nav> 
         </div>
-        <nav>
-            <ul id="navMenu">
-            <li><a class="nav-item" href="#">Discover</a></li>
-            <li><a class="nav-item" href="#">Directory</a></li>
-            <li><a class="nav-item" href="#">Join</a></li>
-            <li><a class="nav-item" href="#">Contact</a></li>
-        </ul>
-        </nav> 
+        
         <span id="currentdate"></span>
     </header>
     <main>
         <section class="hero" >
             <picture class="banner">
-                <source media=""(min-width:1050px) srcset="./images/hero/marseille-hero-large.jpg"> 
-                <source media=""(min-width:480px) srcset="./images/hero/marseille-hero-medium.jpg">
-                <source media=""(max-width:480px) srcset="./images/hero/marseille-hero-small.jpg">
-                <img src="images/hero/" alt="City of Marseille - Photo by Florian Wehde on Unsplash.com">
-            <p>Welcome to Marseille</p></picture>
-            <div>Join the Chamber</div>
+                <source media="(max-width:480px)" srcset="./images/herosrc/wdd480.jpg">
+                <source media="(max-width:1050px)" srcset="./images/herosrc/wdd1000.jpg">
+                <img src="images/herosrc/wdd600.jpg" alt="WDD230 Hero week 6"></picture>
+            <!--
+                <picture class="banner">
+                <source media="(max-width:480px)" srcset="./images/hero/marseille-hero-480.jpg">
+                <source media="(max-width:1050px)" srcset="./images/hero/marseille-hero-1000.jpg">
+                <img src="images/hero/marseille-hero-600.jpg" alt="City of Marseille - Photo by Florian Wehde on Unsplash.com"></picture>
+            -->
+            <p class="welcome">Welcome to Marseille</p><div>Join the Chamber</div>
+            
         </section>
 
         <section class="event"><h1>Event</h1>
             <h2>Morning Member Meetup</h2>
-            For Chamber Members and Invited Guests - Registration is not required but recommended
-            Tuesday, November 8, 2022 8:00 AM - 9:30 AM 
+            For Chamber Members and Invited Guests <br>
+            Registration is recommended <br>
+            Tuesday, November 8, 2022 <br>
+            8:00 AM - 9:30 AM 
             <h2></h2>
         </section>
         <section class="weather"><h1>Weather Summary</h1>
@@ -70,28 +78,33 @@
         <section class="media">
             <div class="spotlight">
                 <h2>Marports</h2>
-                <img src="images/marports.jpg" alt="Marports logo"/>
-                <a href="https://www.marports.com/">Website</a>
-                <p>2, Traverse Santi
-                13015 Marseille
-                Tél. : +33 (0)4 91 09 58 90
-                contact@marports.com</p>
+                <a href="https://www.marports.com/" target="_blank"><img src="images/marports.jpg" alt="Marports logo"/><br>
+                Website</a>
+                <p>2, Traverse Santi <br>
+                13015 Marseille <br>
+                Tél. : +33 04 91 09 58 90 <br>
+                <a href="mailto:contact@marports.com">contact@marports.com</a></p>
             </div>
             <div class="spotlight">
                 <h2>Anotherway</h2>
-                <img src="images/anotherway.jpg">
-                <a href="https://www.another-way.com/">Website</a>
-                <p></p>
+                <a href="https://www.another-way.com/" target="_blank"><img src="images/anotherway.jpg" alt="Anotherway logo"> 
+                    <br> Website</a>
+                    <p>Tél. : +33 07 56 81 14 23 <br>
+                    <a href="mailto:hello@another-way.com">hello@another-way.com</a>
+                    </p>
             </div>
         </section>
 
     </main>
-    <footer> <img class="footer-logo" src="./images/logo.png" alt="MCC logo"/>
-        <p>Marseille Chamber of Commerce <br/> 1, place de Lenche <br/> 13002 MARSEILLE
-        </p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4543.41038237001!2d5.36328274796548!3d43.29749943401265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9c0c3ae4b9f1b%3A0xe316e4136e2b3056!2sPl.%20de%20Lenche%2C%2013002%20Marseille%2C%20France!5e0!3m2!1sfr!2snl!4v1666261275289!5m2!1sfr!2snl" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <footer> 
+        <div class="footer">
+            <img class="footer-logo" src="./images/logo.webp" alt="MCC logo"/>
+            <p>Marseille Chamber of Commerce <br/> 1, place de Lenche <br/> 13002 MARSEILLE
+            </p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4543.41038237001!2d5.36328274796548!3d43.29749943401265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9c0c3ae4b9f1b%3A0xe316e4136e2b3056!2sPl.%20de%20Lenche%2C%2013002%20Marseille%2C%20France!5e0!3m2!1sfr!2snl!4v1666261275289!5m2!1sfr!2snl" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
         <div class="basefooter">
-        &copy; <span id="currentyear"></span> || Marseille Chamber of Commerce || Angie Duhard || WDD230 Project
-        <br/>Last updated: <span id="lastupdated"></span>
+            &copy; <span id="currentyear"></span> || Marseille Chamber of Commerce || Angie Duhard || WDD230 Project
+            <br/>Last updated: <span id="lastupdated"></span>
         </div>
     </footer>
     <script src="./scripts/script.js"></script>
