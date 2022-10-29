@@ -104,5 +104,24 @@
       height: 200px;
     }
 
-    
+    /*-------------------- DISCOVER PAGE --------------------*/
+.discover {
+  display: grid;
+  grid-template-columns: 20% auto;
+}
+
+.gallery img[data-srcset] {
+  filter: blur(0.5em);
+}
+
+.gallery img {
+  box-sizing: border-box;
+}
+.gallery img:hover   {
+  transform: scale(1.1);
+  box-shadow: 5px 5px 10px;
+}
+.gallery img {
+  width: 450px;
+}
 }

@@ -213,5 +213,21 @@ iframe {
 }
 
 .gallery picture {
-  margin: 1em 0 1em 0;
+  margin: 2em 0 1em 0;
+}
+
+.gallery picture h2, .gallery picture p {
+  margin: 0;
+  padding: 0 1.5em 0 1.5em;
+  text-align: justify;
+  font-family: 'Domine', sans-serif;
+ 
+}
+
+.gallery picture h2 {
+   background-color: rgba(0,0,0,.1);
+}
+
+.gallery img {
+  width: 300px;
 }

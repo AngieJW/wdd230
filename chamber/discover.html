@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./styles/medium.css">
     <link rel="stylesheet" href="./styles/large.css">
 </head>
-<body class="discover">
+<body >
     <header >
         <div class="header-grid">
             <img class="header-logo" src="./images/logo.webp" alt="Marseille Chamber of Commerce logo">
@@ -34,18 +34,31 @@
         
         <span id="currentdate"></span>
     </header>
-    <main>
+    <main class="discover">
         <div class="demographics"><h2>Numbers</h2>
-            <p>
+            <p> Population :<br>
+                870 731 inhabitants<br>
+                3 618,7 inhabitants/km² <br>
+                +0.3 % annually<br>
+                <br>
+                412 216 : male<br>
+                458 515 : female<br>
+                <br>
+                213 265 : 0 to 19 y.o<br>
+                490 481 : 20 to 64 y.o<br>
+                166 985 : over 65y.o <br>
+
+
+
 
             
             </p>
         </div>
         <div class="gallery">
         <picture class="lazy">
-               <source media="(max-width:480px)" srcset="images/discover/bonnemere300.jpg">
-               <source media="(max-width:1020px)" srcset="images/discover/bonnemere450.jpg">
-               <img src="images/discover/bonnemere600.jpg" alt="Basilique Notre Dame de la Garde">
+               <source media="(max-width:480px)" data-srcset="images/discover/bonnemere300.jpg" >
+               <source media="(max-width:1020px)" data-srcset="images/discover/bonnemere450.jpg" >
+               <img data-src="images/discover/bonnemere600.jpg" alt="Basilique Notre Dame de la Garde">
                <h2>Notre Dame de la Garde</h2>
                <p> 
                   Notre-Dame de la Garde (Our Lady of the Guard) is a Catholic basilica and the city's best-known 
@@ -56,9 +69,9 @@
 
             </p></picture>
             <picture class="lazy">
-                <source media="(max-width:480px)" srcset="images/discover/calanque300.jpg">
-                <source media="(max-width:1020px)" srcset="images/discover/calanque450.jpg">
-                <img src="images/discover/calanque600.jpg" alt="Marseille Calanques">
+                <source media="(max-width:480px)" data-srcset="images/discover/calanque300.jpg">
+                <source media="(max-width:1020px)" data-srcset="images/discover/calanque450.jpg">
+                <img data-src="images/discover/calanque600.jpg" alt="Marseille Calanques">
              <h2>Calanques</h2>
              <p> A series of limestone cliffs and hidden beaches, pristine blue/green waters and incredible views 
                 of the Mediterranean sea. 
@@ -66,9 +79,9 @@
              </p></picture>
 
              <picture class="lazy">
-                <source media="(max-width:480px)" srcset="images/discover/vieuxport300.jpg">
-                <source media="(max-width:1020px)" srcset="images/discover/vieuxport450.jpg">
-                <img src="images/discover/vieuxport600.jpg" alt="Merseille Old Port">
+                <source media="(max-width:480px)" data-srcset="images/discover/vieuxport300.jpg">
+                <source media="(max-width:1020px)" data-srcset="images/discover/vieuxport450.jpg">
+                <img data-src="images/discover/vieuxport600.jpg" alt="Merseille Old Port" >
              
                 <h2>Vieux Port</h2>
                <p>
@@ -77,9 +90,9 @@
              </p></picture>
 
              <picture class="lazy">
-                <source media="(max-width:480px)" srcset="images/discover/lamajor300.jpg">
-                <source media="(max-width:1020px)" srcset="images/discover/lamajor450.jpg">
-                <img src="images/discover/lamajor600.jpg" alt="Cathedrale Notre Dame de la Major">
+                <source media="(max-width:480px)" data-srcset="images/discover/lamajor300.jpg">
+                <source media="(max-width:1020px)" data-srcset="images/discover/lamajor450.jpg">
+                <img data-src="images/discover/lamajor600.jpeg" alt="Cathedrale Notre Dame de la Major">
              <h2>Notre Dame de la Major</h2>
              <p>Byzantine style cathedral built between 1852 and 1893, a landmark with its green
                  and white horizontal striped stone facade on the exterior of the building, located
@@ -88,9 +101,9 @@
              </p></picture>
 
              <picture class="lazy">
-                <source media="(max-width:480px)" srcset="images/discover/panier300.jpg">
-                <source media="(max-width:1020px)" srcset="images/discover/panier450.jpg">
-                <img src="images/discover/panier600.jpg" alt="Panier neighborhood">
+                <source media="(max-width:480px)" data-srcset="images/discover/panier300.jpg">
+                <source media="(max-width:1020px)" data-srcset="images/discover/panier450.jpg">
+                <img data-src="images/discover/panier600.jpg" alt="Panier neighborhood">
              <h2>Panier neighborhood</h2>
              <p> Old working area of Marseille that is being rejuvenated and is now home to the 
                 arts and crafts of Marseille, with lots of murals and street art. 
@@ -99,6 +112,8 @@
            
 
             </div>
+            <div><span class="label">Number of Visits: </span><span class="visits"></span>
+            s</div>
     </main>
     
     <footer> 
@@ -113,7 +128,7 @@
         </div>
     </footer>
     <script src="./scripts/script.js"></script>
-    <script src="scripts/lazyload.js"></script>
+    <script src="./scripts/discover.js"></script>
     
 </body>
 </html>
