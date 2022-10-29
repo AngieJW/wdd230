@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/medium.css">
+    <link rel="stylesheet" href="./styles/large.css">
+</head>
+<body class="discover">
+    <header >
+        <div class="header-grid">
+            <img class="header-logo" src="./images/logo.webp" alt="Marseille Chamber of Commerce logo">
+            <h1>Marseille <br>Chamber of Commerce</h1>
+            <div class="social">
+                <a href="#"><img src="images/facebook-icon.png" alt="Facebook icon" ></a> 
+                <a href="#"><img src="images/linkedin-icon.png" alt="Linkedin icon"></a>
+            </div>
+            <div class="hamburgerMenu">
+               <button id="hamburgerButton">&#9776;</button>
+            </div>
+            <nav>
+                <ul id="navMenu">
+                <li><a class="nav-item" href="#">Discover</a></li>
+                <li><a class="nav-item" href="#">Directory</a></li>
+                <li><a class="nav-item" href="#">Join</a></li>
+                <li><a class="nav-item" href="#">Contact</a></li>
+            </ul>
+            </nav> 
+        </div>
+        
+        <span id="currentdate"></span>
+    </header>
+    <main>
+        <div class="demographics"><h2>Numbers</h2>
+            <p>
+
+            
+            </p>
+        </div>
+        <div class="gallery">
+        <picture class="lazy">
+               <source media="(max-width:480px)" srcset="images/discover/bonnemere300.jpg">
+               <source media="(max-width:1020px)" srcset="images/discover/bonnemere450.jpg">
+               <img src="images/discover/bonnemere600.jpg" alt="Basilique Notre Dame de la Garde">
+               <h2>Notre Dame de la Garde</h2>
+               <p> 
+                  Notre-Dame de la Garde (Our Lady of the Guard) is a Catholic basilica and the city's best-known 
+                  symbol. Built in 1864 and the site of a popular Assumption Day pilgrimage, it is the most visited
+                  site in Marseille. It was built on the foundations of an ancient fort at the highest natural point
+                  in Marseille, a 149 m (489 ft) limestone outcropping on the south side of the Old Port of Marseille.
+  
+
+            </p></picture>
+            <picture class="lazy">
+                <source media="(max-width:480px)" srcset="images/discover/calanque300.jpg">
+                <source media="(max-width:1020px)" srcset="images/discover/calanque450.jpg">
+                <img src="images/discover/calanque600.jpg" alt="Marseille Calanques">
+             <h2>Calanques</h2>
+             <p> A series of limestone cliffs and hidden beaches, pristine blue/green waters and incredible views 
+                of the Mediterranean sea. 
+                 
+             </p></picture>
+
+             <picture class="lazy">
+                <source media="(max-width:480px)" srcset="images/discover/vieuxport300.jpg">
+                <source media="(max-width:1020px)" srcset="images/discover/vieuxport450.jpg">
+                <img src="images/discover/vieuxport600.jpg" alt="Merseille Old Port">
+             
+                <h2>Vieux Port</h2>
+               <p>
+                The Port, which was once teeming with commercial and military ships,
+                 protected by two forts, is now beautifully colored in white by the numerous boats filling it.
+             </p></picture>
+
+             <picture class="lazy">
+                <source media="(max-width:480px)" srcset="images/discover/lamajor300.jpg">
+                <source media="(max-width:1020px)" srcset="images/discover/lamajor450.jpg">
+                <img src="images/discover/lamajor600.jpg" alt="Cathedrale Notre Dame de la Major">
+             <h2>Notre Dame de la Major</h2>
+             <p>Byzantine style cathedral built between 1852 and 1893, a landmark with its green
+                 and white horizontal striped stone facade on the exterior of the building, located
+                 along the waterfront of the city.
+                 
+             </p></picture>
+
+             <picture class="lazy">
+                <source media="(max-width:480px)" srcset="images/discover/panier300.jpg">
+                <source media="(max-width:1020px)" srcset="images/discover/panier450.jpg">
+                <img src="images/discover/panier600.jpg" alt="Panier neighborhood">
+             <h2>Panier neighborhood</h2>
+             <p> Old working area of Marseille that is being rejuvenated and is now home to the 
+                arts and crafts of Marseille, with lots of murals and street art. 
+                 
+             </p></picture>
+           
+
+            </div>
+    </main>
+    
+    <footer> 
+        <div class="footer">
+            <img class="footer-logo" src="./images/logo.webp" alt="MCC logo">
+            <p>Marseille Chamber of Commerce <br> 1, place de Lenche <br> 13002 MARSEILLE
+            </p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4543.41038237001!2d5.36328274796548!3d43.29749943401265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9c0c3ae4b9f1b%3A0xe316e4136e2b3056!2sPl.%20de%20Lenche%2C%2013002%20Marseille%2C%20France!5e0!3m2!1sfr!2snl!4v1666261275289!5m2!1sfr!2snl" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="basefooter">
+            &copy; <span id="currentyear"></span> || Marseille Chamber of Commerce || Angie Duhard || WDD230 Project
+            <br>Last updated: <span id="lastupdated"></span>
+        </div>
+    </footer>
+    <script src="./scripts/script.js"></script>
+    <script src="scripts/lazyload.js"></script>
+    
+</body>
+</html>
