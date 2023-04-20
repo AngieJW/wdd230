@@ -1,0 +1,17 @@
+@media screen and (min-width: 32.5em) {
+    body {
+        line-height: 1.8;
+        font-size: 20px;
+    }
+    header {
+        flex-direction: row;
+    }
+    header img {
+        height: 300px;
+        padding: 2rem 1rem 2rem 1rem;
+    }
+    
+    a:hover {
+        background-color: #FFEC92;
+    }
+}

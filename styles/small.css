@@ -16,12 +16,14 @@ header{
     display: flex;
     justify-content: space-evenly;
     width: 70vw;
+    flex-direction: column;
+}
 
-}
 header img {
-    height: 300px;
-    padding: 2rem 1rem 2rem 1rem;
+    height : auto;
+    width: auto;
 }
+
 
 header h1 {
     display: flex;
@@ -70,13 +72,4 @@ footer {
     justify-content: center;
 }
 
-
-@media screen and (max-width: 650px) {
-    header {
-        flex-direction: column;
-    }
-    header img {
-        height : auto;
-        width: auto;
-    }
-}
+   
