@@ -1,0 +1,11 @@
+@media screen and (min-width: 64em) { 
+
+    main {
+        grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+    }
+
+    .alignment {
+        grid-column: 3/4;
+    }
+
+}
