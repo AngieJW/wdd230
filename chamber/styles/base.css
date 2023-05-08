@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Comme:wght@400;500;800&family=Cookie&display=swap');
+
+/*
+Light grey : #D1D1D1 ;
+navy blue : #0D0221  ;
+light blue : #85C7F2  ;
+sea green : #32936F  ;
+Navy blue and light blue : 10.92 contrast ratio (best light for background, dark for text)
+Navy blue & sea green : 5.28 contrast ratio (OK for bold or above 18px)
+
+font-family: 'Comme', sans-serif;
+possible font-weights : 400 / 500 / 800 ;
+font-family: 'Cookie', cursive;
+
+*/
+
+body {
+    font-family: 'Comme', sans-serif;
+    align-items: center;
+}
+
+header, footer{
+    background: #0D0221;
+    color: #85C7F2;
+    text-align: center;
+    padding: 2em;
+}
+h1 {
+    margin: 0;
+}
+h2{
+    font-family: 'Cookie', cursive;
+    font-size: 2em;
+    margin: 0;
+}
+h3{
+    margin: 0;
+}
+.heading-blue {
+    background-color: #0D0221;
+    padding: 1em;
+    color:#85C7F2;
+    font-size: 1.5rem;
+}
+
+.heading-green {
+    background-color: #0D0221;
+    padding: 1em;
+    color:#32936F;
+    font-size: 1.5em;
+    font-weight: 800;
+}
+
+.p-grey {
+    background-color: #D1D1D1;
+    color: #0D0221;
+}
+
+.p-blue {
+    background-color: #85C7F2;
+    color: #0D0221;
+}
+
+.p-green {
+    background-color: #32936F;
+    font-family: "Comme";
+    font-weight: 500;
+    font-size: 1.5em;
+}
