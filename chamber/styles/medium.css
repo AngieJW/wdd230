@@ -1,0 +1,11 @@
+@media screen and (min-width: 32.5em) {
+    body {
+        line-height: 1.8;
+        font-size: 20px;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: row;
+    }
+}

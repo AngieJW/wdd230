@@ -10,8 +10,7 @@ Navy blue & sea green : 5.28 contrast ratio (OK for bold or above 18px)
 
 font-family: 'Comme', sans-serif;
 possible font-weights : 400 / 500 / 800 ;
-font-family: 'Cookie', cursive;
-
+font-family: 'Cookie', cursive ;
 */
 
 body {
@@ -23,19 +22,77 @@ header, footer{
     background: #0D0221;
     color: #85C7F2;
     text-align: center;
-    padding: 2em;
+    padding: 1em;
 }
+
+.header-top{
+    display: flex;
+    flex-direction: row;
+}
+
+.header-logo {
+    width: 15vw;
+    height: fit-content;
+    align-self: center;
+}
+
 h1 {
     margin: 0;
 }
+
 h2{
     font-family: 'Cookie', cursive;
     font-size: 2em;
     margin: 0;
 }
+
+.social img {
+    width: 20px;
+}
+
+/*-------------------- NAV --------------------*/
+  
+  #hamburgerButton {
+    background:none;
+    color:#fff;
+    border: 0;
+    line-height: 0.9;
+    font-size: 2.5em;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  nav ul {
+    display: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    list-style: none;
+  }
+  nav ul.open {
+    display: block;
+  }
+  nav ul li a {
+    display: block;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #FFC43D;
+    padding: .5em;
+  }
+  nav ul li a:hover {
+    background-color: rgba(255, 196, 61, 1);
+    color: #2F3137;
+  }
+
+
+main {
+    display: flex;
+    flex-direction: column;
+}
 h3{
     margin: 0;
 }
+
 .heading-blue {
     background-color: #0D0221;
     padding: 1em;
@@ -66,4 +123,8 @@ h3{
     font-family: "Comme";
     font-weight: 500;
     font-size: 1.5em;
+}
+
+section{
+    margin: 1em;
 }
