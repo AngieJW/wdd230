@@ -9,11 +9,9 @@
     #hamburgerButton {
         display:none;
     }
-    nav {
-        display: block;
-    }
-    nav ul {
+    nav ul{
         display: flex;
+        flex-direction: row;
     }
 
     nav ul li a {
