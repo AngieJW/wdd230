@@ -32,8 +32,10 @@ header, footer{
 }
 
 .header-logo {
-    width: 15vw;
+    max-width: 70px;
+    width: auto;
     height: fit-content;
+    padding: 0.5em;
 }
 
 h1 {
@@ -51,10 +53,9 @@ h2{
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    width: 40vw;
 }
 .social {
-    padding: 1em;
+    padding: 0.5em;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -73,11 +74,11 @@ h2{
     justify-content: center;
 }
 /*-------------------- NAV --------------------*/
-    .hamburger-menu {
-        width: 20vw;
+    .hamburgerMenu {
         display: flex;
         align-items: center;
         justify-content: end;
+        width: auto;
     }
 
   #hamburgerButton {
@@ -89,30 +90,30 @@ h2{
     font-weight: bold;
     cursor: pointer; 
   }
-  
-  nav {
-    display: none;
-  }
   nav ul{
     display: none;
+    justify-content:space-between;
     padding: 0;
     margin: 0;
     text-align: center;
     list-style: none;
   }
   nav ul.open {
-    display: block;
+    background-color: #0D0221;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
   }
   nav ul li a {
     display: block;
     text-decoration: none;
     font-size: 1rem;
-    color: #FFC43D;
+    color: #32936F;
     padding: .5em;
   }
   nav ul li a:hover {
-    background-color: rgba(255, 196, 61, 1);
-    color: #2F3137;
+    background-color: #32936F;
+    color: #0D0221;
   }
 
 
@@ -163,7 +164,7 @@ section{
 
 .top-footer img {
     width: 100px;
-    height: fit-content;
+    height:fit-content;
 }
 .top-footer {
     margin-bottom: 2em;
