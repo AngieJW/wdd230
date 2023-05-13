@@ -16,6 +16,7 @@ font-family: 'Cookie', cursive ;
 body {
     font-family: 'Comme', sans-serif;
     align-items: center;
+    margin: 0 auto;
 }
 
 header, footer{
@@ -33,7 +34,6 @@ header, footer{
 .header-logo {
     width: 15vw;
     height: fit-content;
-    align-self: center;
 }
 
 h1 {
@@ -41,24 +41,39 @@ h1 {
 }
 
 h2{
-    font-family: 'Cookie', cursive;
-    font-size: 2em;
+    font-family: 'Comme';
+    font-size: 0.8em;
     margin: 0;
 }
-
+.heading {
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 40vw;
+}
 .social {
     padding: 1em;
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 .social img {
-    width: 20px;
+    width: 30px;
     padding-left: .5em;
 }
-
+.date {
+    width: 100%;
+    color: #32936F;
+    height: 70px;
+}
 /*-------------------- NAV --------------------*/
     .hamburger-menu {
         width: 20vw;
+        display: flex;
+        align-items: center;
+        justify-content: end;
     }
 
   #hamburgerButton {
