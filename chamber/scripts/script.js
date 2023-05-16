@@ -10,9 +10,9 @@ const date = new Date();
 let fullDate = new Intl.DateTimeFormat("en-US", {dateStyle: "full"}).format(date);
 document.getElementById("currentdate").innerHTML = fullDate;
 
-function toggleMenu() {
-    document.getElementById("navMenu").classList.toggle("open");
-}
+const hamburgerButton = document.querySelector('#hamburgerButton');
+const navigation = document.querySelector('.navigation');
 
-const x = document.getElementById("hamburgerButton")
-x.onclick = toggleMenu;
+hamburgerButton.addEventListener('click', () => {
+	navigation.classList.toggle('responsive');
+});

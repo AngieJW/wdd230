@@ -25,23 +25,78 @@ header, footer{
     text-align: center;
     padding: 1em;
 }
-
 .header-top{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
-
 .header-logo {
     max-width: 70px;
     width: auto;
     height: fit-content;
     padding: 0.5em;
+    margin-top: 0.5em;
+}
+.heading h1{
+ margin: 0;
+ padding: 0;
+}
+.date {
+    width: 100%;
+    color: #32936F;
+    height: 50px;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-h1 {
-    margin: 0;
+/* small view navigation */
+#hamburgerButton {
+	display: block;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: fit-content;
+	background:none;
+    color:#fff;
+    border: 0;
+    line-height: 0.9;
+    font-size: 2.5em;
+    font-weight: bold;
+    cursor: pointer;
+}
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+}
+.navigation li {
+	display: none;
+    background-color: #32936F;
+}
+.navigation li a {
+    color: #0D0221;
+    font-weight: 800;
+    font-size: 1.5em;
+	padding: 1.15rem;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+}
+.navigation li a:hover {
+	background-color: #bbb;
+	font-weight: 700;
 }
 
+/* when the button is clicked - the responsive class is added and accounted for here */
+.navigation.responsive li {
+	display: block;
+	width: 100%;
+}
+.navigation.responsive li a {
+	display: block;
+}
 h2{
     font-family: 'Comme';
     font-size: 0.8em;
@@ -64,58 +119,6 @@ h2{
     width: 30px;
     padding-left: .5em;
 }
-.date {
-    width: 100%;
-    color: #32936F;
-    height: 50px;
-    font-size: 1.2em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-/*-------------------- NAV --------------------*/
-    .hamburgerMenu {
-        display: flex;
-        align-items: center;
-        justify-content: end;
-        width: auto;
-    }
-
-  #hamburgerButton {
-    background:none;
-    color:#fff;
-    border: 0;
-    line-height: 0.9;
-    font-size: 2.5em;
-    font-weight: bold;
-    cursor: pointer; 
-  }
-  nav ul{
-    display: none;
-    justify-content:space-between;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    list-style: none;
-  }
-  nav ul.open {
-    background-color: #0D0221;
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-  }
-  nav ul li a {
-    display: block;
-    text-decoration: none;
-    font-size: 1rem;
-    color: #32936F;
-    padding: .5em;
-  }
-  nav ul li a:hover {
-    background-color: #32936F;
-    color: #0D0221;
-  }
-
 
 main {
     display: flex;
