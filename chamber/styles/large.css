@@ -41,10 +41,10 @@
     }
     .spotlight {
         width: auto;
-        min-height: 300px;
         margin: 0.5em 0.5em;
     }
     .thirdmedia {
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
 }

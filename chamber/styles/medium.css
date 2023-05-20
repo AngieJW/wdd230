@@ -48,6 +48,13 @@
         margin: 0.3em;
         min-height: 300px;
     }
+    section img {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: auto;
+    }
     .top-footer {
         display: flex;
         gap: 3em;
