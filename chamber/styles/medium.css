@@ -46,14 +46,16 @@
     }
     section{
         margin: 0.3em;
-        min-height: 300px;
     }
     section img {
         box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-        width: 100%;
+        margin: 1em;
+        padding: 1em;
+        width: 90%;
         height: auto;
+    }
+    .h2{
+        font-size: 2em;
     }
     .top-footer {
         display: flex;
