@@ -26,9 +26,6 @@
         grid-row: 3/4;
         grid-column: 1/2;
     }
-    .join a, .news a{
-        color: #32936F;
-    }
     .hero{
         grid-row: auto;
         grid-column: 2/3;
@@ -38,12 +35,6 @@
     }
     .welcome{
         left: 150px;
-    }
-    .hero div{
-        left: 150px;
-        top: 350px;
-        width: 300px;
-        text-align: center;
     }
     .news {
         grid-row: 2/4;
