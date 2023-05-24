@@ -178,7 +178,9 @@ img {
 h3{
     margin: 0;
 }
-
+.join a, .news a{
+    color: #32936F;
+}
 .heading-blue {
     background-color: #0D0221;
     padding: 1em;
