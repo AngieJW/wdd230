@@ -15,7 +15,7 @@
 <body>
     <header >
         <div class="header-top">
-            <a href="../chamber/"><img class="header-logo" src="./images/cassislogo.jpg" alt="Cassis Chamber of Commerce logo"></a>
+            <a href="../chamber/"><img class="header-logo" src="./images/cassislogo.webp" alt="Cassis Chamber of Commerce logo"></a>
             <div class="heading"><h1>Cassis </h1><h2>Chamber</h2>
             </div> 
             <div class="social">
@@ -38,7 +38,11 @@
     <main>
         <section class="hero p-grey" >
             <picture class="banner">
-                <img src="./images/cassis.jpg" alt="City of Cassis - Photo by Camille Bernard on Unsplash.com"></picture>
+                <source media="(max-width:480px)" srcset="./images/srcset small.jpg">
+                <source media="(max-width:1020px)" srcset="./images/srcset medium.jpg">
+                <img src="./images/srcset large viewportr.jpg" alt="WDD230 Hero week 6"></picture>
+            
+                <!-- <img src="./images/cassis.jpg" alt="City of Cassis - Photo by Camille Bernard on Unsplash.com"></picture> -->
                
                <h2 class="welcome">Welcome to Cassis</h2><div>Join the Chamber</div>
                
@@ -109,7 +113,7 @@
 
     <footer> 
         <div class="top-footer">
-            <img class="footer-logo" src="./images/cassislogo.jpg" alt="Cassis chamber of Commerce logo">
+            <img class="footer-logo" src="./images/cassislogo.webp" alt="Cassis chamber of Commerce logo">
             <p>Cassis Chamber of Commerce <br> 6, rue Alexandre Rossat <br> 13260 CASSIS
             </p>
             <p> <br> info@cassischamber.com <br> Location Map 
